@@ -1,0 +1,84 @@
+---
+title: Галерея – OrientalRoadTour.uz
+page: gallery
+---
+extends includes/_page
+
+block main
+
+    main.oriental--site-main
+
+        .oriental--site-hero.inner-page(style="background-image: url('images/slider_2.jpg')")
+
+            .container
+                .row.align-items-center.justify-content-center
+                    .col-md-7.text-center
+                        .site-hero-contents(data-aos='fade-up')
+                            h1.hero-heading.text-white Gallery
+
+        .oriental--site-section
+
+            .container-fluid.px-0
+                .row.justify-content-center.text-center.pt-0.pb-5
+
+                    .col-lg-6.section-heading(data-aos='fade-up')
+                        h3.text-center Slider Gallery
+
+                .row.align-items-stretch
+
+                    .col-9.relative(data-aos='fade-up' data-aos-delay='')
+                        .owl-carousel.owl-gallery-big
+                            .slide-thumb.bg-image(style="background-image: url('images/room_1_a.jpg')")
+                            .slide-thumb.bg-image(style="background-image: url('images/room_1_b.jpg')")
+                            .slide-thumb.bg-image(style="background-image: url('images/room_2_a.jpg')")
+                            .slide-thumb.bg-image(style="background-image: url('images/room_2_b.jpg')")
+                        .slider-counter.text-center
+
+                    .col-3.relative(data-aos='fade-up' data-aos-delay='100')
+                        .owl-carousel.owl-gallery-small
+                            .slide-thumb.bg-image(style="background-image: url('images/room_1_a.jpg')")
+                                a(href='#')
+                            .slide-thumb.bg-image(style="background-image: url('images/room_1_b.jpg')")
+                                a(href='#')
+                            .slide-thumb.bg-image(style="background-image: url('images/room_2_a.jpg')")
+                                a(href='#')
+                            .slide-thumb.bg-image(style="background-image: url('images/room_2_b.jpg')")
+                                a(href='#')
+
+        .oriental--site-section
+
+            .container
+                .row.justify-content-center.text-center.pt-0.pb-5
+
+                    .col-lg-6.section-heading(data-aos='fade-up')
+                        h3.text-center More Galleries
+
+                .row.gutter-2
+
+                    .col-md-6(data-aos='fade-up' data-aos-delay='')
+                        a(href='images/img_1.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_1.jpg' alt='Image')
+
+                    .col-md-6(data-aos='fade-up' data-aos-delay='100')
+                        a(href='images/img_2.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_2.jpg' alt='Image')
+
+                    .col-md-4(data-aos='fade-up' data-aos-delay='100')
+                        a(href='images/img_1.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_1.jpg' alt='Image')
+
+                    .col-md-4(data-aos='fade-up' data-aos-delay='200')
+                        a(href='images/img_1.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_1.jpg' alt='Image')
+
+                    .col-md-4(data-aos='fade-up' data-aos-delay='300')
+                        a(href='images/img_1.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_1.jpg' alt='Image')
+
+                    .col-md-6(data-aos='fade-up' data-aos-delay='')
+                        a(href='images/img_1.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_1.jpg' alt='Image')
+
+                    .col-md-6(data-aos='fade-up' data-aos-delay='100')
+                        a(href='images/img_2.jpg' data-fancybox='gallery')
+                            img.img-fluid(src='images/img_2.jpg' alt='Image')

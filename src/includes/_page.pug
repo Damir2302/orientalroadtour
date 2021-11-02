@@ -1,0 +1,79 @@
+doctype
+html(lang="ru")
+  head
+    meta(charset='utf-8')
+
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+
+    meta(name='author' content='OrientalRoadTour')
+    meta(name='description' content='Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!')
+    meta(name='keywords' content='OrientalRoadTour, Uzbekistan, Samarkand, Bukhara, Tours')
+
+    // OpenGraph
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:site_name" content="OrientalRoadTour.uz" />
+    <meta property="og:title" content="Экскурсионные туры по Узбекистану" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!" />
+    <meta property="og:image" content="/assets/images/slider_1.jpg" />
+    <meta property="og:url" content="https://www.orientalroadtour.uz" />
+
+    link(rel='shortcut icon' href='assets/images/favicon.png')
+
+    include _loadFonts
+
+    include _loadCss
+
+    title= title || 'OrientalRoadTour.uz'
+
+    // Schema.org
+    script(type="application/ld+json").
+                {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Узбекистан, г. Самарканд",
+                    "postalCode": "140100",
+                    "streetAddress": "Регистанская ул., 9Б"
+                },
+                "email": "orientalroadtour@gmail.com",
+                "name": "OrientalRoadTour",
+                "telephone": "+998 (91) 559-23-22"
+                }
+
+  body
+
+    #oriental--overlayer
+
+    .loader
+      .spinner-border.text-primary(role='status')
+        span.sr-only Загрузка...
+
+    nav.oriental--site-mobile-menu
+      .close-wrap.d-flex
+        a.d-flex.ml-auto.js-menu-toggle(href='#')
+          span.close-label Закрыть
+          .close-times
+            span.bar1
+            span.bar2
+      .site-mobile-inner
+
+    .oriental--site-wrap
+
+      // Header::Start
+      block header
+        include _header
+      // Header::End
+
+      // Main::Start
+      block main
+      // Main::End
+
+      // Footer::Start
+      footer.oriental--site-footer
+        block footer
+            include _footer
+      // Footer::End
+
+    include _loadScripts

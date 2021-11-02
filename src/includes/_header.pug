@@ -1,0 +1,41 @@
+//- Header
+
+nav.oriental--site-nav.js-sticky-nav
+
+    .container.d-flex.align-items-center
+
+      .logo-wrap
+        a.oriental--site-logo(href='/') Oriental Road Tour
+
+      .site-nav-ul-wrap.text-center.d-none.d-lg-block
+        ul.site-nav-ul.js-clone-nav
+          li(class=(page === 'index' ? 'active' : undefined))
+            a(href='/') Главная
+          li(class=(page === 'about' ? 'active' : undefined))
+            a(href='/about.html') О нас
+          li(class=(page === 'tour' ? 'active' : undefined))
+            a(href='/tour.html') Туры
+          li(class=(page === 'gallery' ? 'active' : undefined))
+            a(href='/gallery.html') Галерея
+          li(class=(page === 'contact' ? 'active' : undefined))
+            a(href='/contact.html') Контакты
+
+      .icons-wrap.text-md-right
+
+        ul.icons-top.d-none.d-lg-block
+
+          li
+            a
+              img(src="assets/images/ru.svg", alt="")
+
+          li
+            a(href="/uz" title="O`zbekcha")
+              img(src="assets/images/uz.svg", alt="")
+
+          li
+            a(href="/en" title="English")
+              img(src="assets/images/gb.svg", alt="")
+
+        // Mobile Toggle
+        a.d-block.d-lg-none.burger.js-menu-toggle(href='#' data-toggle='collapse' data-target='#main-navbar')
+          span
