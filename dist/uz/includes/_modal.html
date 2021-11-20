@@ -1,0 +1,36 @@
+
+<div id="modal-form" style="display:none">
+  <form class="modal-form" action="#">
+    <div class="form-group">
+      <label for="name">Ismingiz *</label>
+      <input class="form-control" id="name" type="text" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="email">Elektron manzilingiz *</label>
+      <input class="form-control" id="email" type="text" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="phone">Telefon raqamingiz *</label>
+      <input class="form-control" id="phone" type="text" required="required"/>
+    </div>
+    <div class="form-group">
+      <label for="subject">Ekskursiyani tanlang</label>
+      <select class="form-control" id="tour" type="text">
+        <option value="Hech narsa tanlanmagan">...</option>
+        <option value="Samarqand">Samarqand</option>
+        <option value="Buxoro">Buxoro</option>
+        <option value="Xiva">Xiva</option>
+        <option value="Shahrisabz">Shahrisabz</option>
+      </select>
+    </div>
+    <label>To'lov shakli</label>
+    <div class="form-group payment-form"><span class="form-inline">
+        <label for="payment1">Naqd pul</label>
+        <input class="form-control" id="payment1" type="radio" name="payment" value="Naqd pul"/></span><span class="form-inline">
+        <label for="payment2">Plastik karta</label>
+        <input class="form-control" id="payment2" type="radio" name="payment" value="Plastik karta"/><img src="../assets/images/cards.png" alt="cards"/></span></div>
+    <div class="form-group">
+      <input class="btn btn-black px-5 text-white" type="submit" value="Yuborish"/><span class="notify-under-btn">* Tugmani bosish orqali siz shaxsiy ma'lumotlaringizni qayta ishlashga rozilik bildirasiz.</span>
+    </div>
+  </form>
+</div>

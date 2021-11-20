@@ -1,7 +1,7 @@
 ---
 link_ru: /contact.html
 link_uz: /uz/contact.html
-title: Контакты – OrientalRoadTour.uz
+title: Contact – OrientalRoadTour.uz
 page: contact
 ---
 extends includes/_page
@@ -10,7 +10,7 @@ block main
 
     main.oriental--site-main
 
-        .oriental--site-hero.inner-page.bg-light(style='background-color: #fff;')
+        .oriental--site-hero.inner-page.bg-light(style="background-image: url('../assets/images/contact_1.jpg')")
 
             .container
                 .row.align-items-center
@@ -19,9 +19,7 @@ block main
                         .site-hero-contents(data-aos='fade-up')
                             h1.hero-heading Contact Us
                             .sub-text.w-75
-                                p
-                                    | Facilities provided may range from a modest-quality mattress in a small room to large suites with
-                                    | bigger.
+                                p We are always in touch!
 
         .oriental--site-section
 
@@ -36,43 +34,41 @@ block main
                         form(action='#')
                             .form-group
                             label(for='name') Your Name *
-                            input#name.form-control(type='text')
+                            input#name.form-control(type='text' required)
                             .form-group
                             label(for='email2') Your Email *
-                            input#email2.form-control(type='text')
+                            input#email2.form-control(type='text' required)
                             .form-group
                             label(for='subject') Subject
                             input#subject.form-control(type='text')
                             .form-group
                             label(for='message') Message *
-                            textarea#message.form-control(name='message' cols='30' rows='10')
+                            textarea#message.form-control(name='message' cols='30' rows='10' required)
                             .form-group
                             input.btn.btn-black.px-5.text-white(type='submit' value='Send')
+                            span.notify-under-btn * By clicking on the button, you consent to the processing of your personal data.
 
                     .col-md-4.ml-auto(data-aos='fade-up' data-aos-delay='200')
                         .media-29190
                             span.label Email
                             p
-                                a(href='#') info@Untree.co
+                                a(href='#') orientalroadtour@gmail.com
                         .media-29190
                             span.label Phone
                             p
-                                a(href='#') +30 931 3829 399
+                                a(href='tel:+998915592322') +998 (91) 559-23-22
                         .media-29190
                             span.label Address
-                            p 273 South Riverview Rd. New York, NY 10011
+                            p Uzbekistan, Samarkand, 140100, Abdurakhman Zhamiy, st. Amir Shahmurod, 16
                         .media-29190
                             span.label Social
                             ul.icons-top.icons-dark
                                 li
-                                    a(href='#')
+                                    a(href='https://t.me/Orientalroadtour' target='_blank')
+                                        span.icon-telegram
+                                li
+                                    a
                                         span.icon-facebook
                                 li
-                                    a(href='#')
-                                        span.icon-twitter
-                                li
-                                    a(href='#')
+                                    a
                                         span.icon-instagram
-                                li
-                                    a(href='#')
-                                        span.icon-tripadvisor

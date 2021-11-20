@@ -464,4 +464,15 @@ setTimeout(function() {
      };
      owlCarouselPlugin();
 
+     // Modal
+     $('.btn--action').modaal({
+        content_source: '#modal-form',
+     });
+
+     $('.tour-sec').on('click', function() {
+        $('form.modal-form select').html('');
+        $('form.modal-form select').append(`<option value=${$(this).attr("data-set")}>${$(this).attr("data-set")}</option>`);
+        $('form.modal-form select').attr('disabled', 'true');
+     })
+
    });

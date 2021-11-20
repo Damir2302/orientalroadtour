@@ -156,10 +156,12 @@ function jsPlugins(cb) {
         pathTo.resolve('src', 'assets/js/vendor/aos.js'),
         pathTo.resolve('src', 'assets/js/vendor/jquery.lettering.js'),
         pathTo.resolve('src', 'assets/js/vendor/jquery.sticky.js'),
+        pathTo.resolve('src', 'assets/js/vendor/jquery.fancybox.min.js'),
         pathTo.resolve('src', 'assets/js/vendor/TweenMax.min.js'),
         pathTo.resolve('src', 'assets/js/vendor/ScrollMagic.min.js'),
         pathTo.resolve('src', 'assets/js/vendor/scrollmagic.animation.gsap.min.js'),
-        pathTo.resolve('src', 'assets/js/vendor/debug.addIndicators.min.js')
+        pathTo.resolve('src', 'assets/js/vendor/debug.addIndicators.min.js'),
+        pathTo.resolve('node_modules', 'modaal/dist/js/modaal.min.js')
 	])
     .pipe(plumber({
 		errorHandler: notify.onError("Error: <%= error.message %>")

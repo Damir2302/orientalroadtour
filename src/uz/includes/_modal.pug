@@ -1,0 +1,33 @@
+//- Modal
+
+#modal-form(style="display:none")
+    form.modal-form(action='#')
+        .form-group
+            label(for='name') Ismingiz *
+            input#name.form-control(type='text' required)
+        .form-group
+            label(for='email') Elektron manzilingiz *
+            input#email.form-control(type='text' required)
+        .form-group
+            label(for='phone') Telefon raqamingiz *
+            input#phone.form-control(type='text' required)
+        .form-group
+            label(for='subject') Ekskursiyani tanlang
+            select#tour.form-control(type='text')
+                option(value="Hech narsa tanlanmagan") ...
+                option(value="Samarqand") Samarqand
+                option(value="Buxoro") Buxoro
+                option(value="Xiva") Xiva
+                option(value="Shahrisabz") Shahrisabz
+        label To'lov shakli
+        .form-group.payment-form
+            span.form-inline
+                label(for='payment1') Naqd pul
+                input#payment1.form-control(type='radio' name="payment" value="Naqd pul")
+            span.form-inline
+                label(for='payment2') Plastik karta
+                input#payment2.form-control(type='radio' name="payment" value="Plastik karta")
+                img(src="../assets/images/cards.png", alt="cards")
+        .form-group
+            input.btn.btn-black.px-5.text-white(type='submit' value='Yuborish')
+            span.notify-under-btn * Tugmani bosish orqali siz shaxsiy ma'lumotlaringizni qayta ishlashga rozilik bildirasiz.

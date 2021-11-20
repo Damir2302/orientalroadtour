@@ -29,49 +29,47 @@ block main
 
                     .col-12(data-aos='fade-up')
 
-                        h2.display-4.mb-5 Fill the form
+                        h2.display-4.mb-5 Заполните форму
 
                     .col-md-6.mb-5.mb-md-0(data-aos='fade-up' data-aos-delay='100')
                         form(action='#')
                             .form-group
-                            label(for='name') Your Name *
-                            input#name.form-control(type='text')
+                            label(for='name') Ваше имя *
+                            input#name.form-control(type='text' required)
                             .form-group
-                            label(for='email2') Your Email *
-                            input#email2.form-control(type='text')
+                            label(for='email2') Ваш электронный адрес *
+                            input#email2.form-control(type='text' required)
                             .form-group
-                            label(for='subject') Subject
+                            label(for='subject') Тема сообщения
                             input#subject.form-control(type='text')
                             .form-group
-                            label(for='message') Message *
-                            textarea#message.form-control(name='message' cols='30' rows='10')
+                            label(for='message') Сообщение *
+                            textarea#message.form-control(name='message' cols='30' rows='10' required)
                             .form-group
-                            input.btn.btn-black.px-5.text-white(type='submit' value='Send')
+                            input.btn.btn-black.px-5.text-white(type='submit' value='Отправить')
+                            span.notify-under-btn * Нажимая на кнопку, вы даете согласие на обработку своих персональных данных.
 
                     .col-md-4.ml-auto(data-aos='fade-up' data-aos-delay='200')
                         .media-29190
-                            span.label Email
+                            span.label Электронная почта
                             p
-                                a(href='#') info@Untree.co
+                                a(href='mailto:orientalroadtour@gmail.com') orientalroadtour@gmail.com
                         .media-29190
-                            span.label Phone
+                            span.label Телефон
                             p
-                                a(href='#') +30 931 3829 399
+                                a(href='tel:+998915592322') +998 (91) 559-23-22
                         .media-29190
-                            span.label Address
-                            p 273 South Riverview Rd. New York, NY 10011
+                            span.label Адрес
+                            p Узбекистан, г. Самарканд, 140100, Абдурахман Жамий, ул. Амир Шахмурод, 16
                         .media-29190
-                            span.label Social
+                            span.label Социальные сети
                             ul.icons-top.icons-dark
                                 li
-                                    a(href='#')
+                                    a(href='https://t.me/Orientalroadtour' target='_blank')
+                                        span.icon-telegram
+                                li
+                                    a
                                         span.icon-facebook
                                 li
-                                    a(href='#')
-                                        span.icon-twitter
-                                li
-                                    a(href='#')
+                                    a
                                         span.icon-instagram
-                                li
-                                    a(href='#')
-                                        span.icon-tripadvisor

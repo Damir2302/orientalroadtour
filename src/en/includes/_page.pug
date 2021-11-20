@@ -6,15 +6,15 @@ html(lang="en")
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 
     meta(name='author' content='OrientalRoadTour')
-    meta(name='description' content='Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!')
+    meta(name='description' content='Excursion tours in Uzbekistan from the tour operator «OrientalRoadTour» include visiting the brightest, most interesting and original sights!')
     meta(name='keywords' content='OrientalRoadTour, Uzbekistan, Samarkand, Bukhara, Tours')
 
     // OpenGraph
     <meta property="og:locale" content="en_GB" />
     <meta property="og:site_name" content="OrientalRoadTour.uz" />
-    <meta property="og:title" content="Экскурсионные туры по Узбекистану" />
+    <meta property="og:title" content="Excursion Tours in Uzbekistan" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!" />
+    <meta property="og:description" content="Excursion tours in Uzbekistan from the tour operator «OrientalRoadTour» include visiting the brightest, most interesting and original sights!" />
     <meta property="og:image" content="../assets/images/slider_1.jpg" />
     <meta property="og:url" content="https://www.orientalroadtour.uz" />
 
@@ -33,9 +33,9 @@ html(lang="en")
                 "@type": "Organization",
                 "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": "Узбекистан, г. Самарканд",
+                    "addressLocality": "Uzbekistan, Samarkand",
                     "postalCode": "140100",
-                    "streetAddress": "Регистанская ул., 9Б"
+                    "streetAddress": "Abdurakhman Zhamiy, st. Amir Shahmurod, 16"
                 },
                 "email": "orientalroadtour@gmail.com",
                 "name": "OrientalRoadTour",
@@ -48,12 +48,12 @@ html(lang="en")
 
     .loader
       .spinner-border.text-primary(role='status')
-        span.sr-only Загрузка...
+        span.sr-only Loading...
 
     nav.oriental--site-mobile-menu
       .close-wrap.d-flex
         a.d-flex.ml-auto.js-menu-toggle(href='#')
-          span.close-label Закрыть
+          span.close-label Close
           .close-times
             span.bar1
             span.bar2
@@ -69,6 +69,11 @@ html(lang="en")
       // Main::Start
       block main
       // Main::End
+
+      // Modal::Start
+      block modal
+        include _modal
+      // Modal::End
 
       // Footer::Start
       footer.oriental--site-footer

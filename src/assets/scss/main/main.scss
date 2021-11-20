@@ -242,7 +242,7 @@ a, a:hover {
 
 @media (max-width: 991.98px) {
 	.oriental--site-hero .site-hero-contents .hero-heading {
-		font-size: 3.5rem;
+		font-size: 2.5rem;
 	}
 }
 
@@ -325,6 +325,35 @@ a, a:hover {
 	.owl-hero .owl-nav {
 		display: none;
 	}
+}
+
+button.btn--action {
+	margin-top: 20px;
+    padding: 0 15px;
+    background: #00000077;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    border: 2px solid #d67e54;
+    border-radius: 10px;
+	transition: transform .5s;
+}
+
+button.btn--action:hover {
+	color: #fff;
+	outline: 0;
+	box-shadow: 0 0 0 0.2rem rgba(255,137,107, .1);
+	transform: scale(1.1);
+}
+
+button.btn--action:focus {
+	box-shadow: none;
+}
+
+button.btn.btn--action.tour-sec {
+	background: transparent;
+	color: #000;
 }
 
 .owl-hero .owl-nav .owl-prev,
@@ -969,7 +998,7 @@ a, a:hover {
 	position: fixed;
 	z-index: 1009;
 	height: 100vh;
-	background: #fff;
+	background: #eee;
 	width: 280px;
 	overflow: auto;
 	padding-top: 30px;
@@ -1107,6 +1136,19 @@ a, a:hover {
 
 .oriental--site-mobile-menu ul > li.has-children > ul > li.has-children .arrow-collapse {
 	top: -10px;
+}
+
+@media (max-width: 992px) {
+
+	.site-nav-wrap:last-child {
+		margin-top: 10px;
+		display: flex;
+		list-style: none;
+	}
+
+	.site-nav-wrap > li > a > img {
+		width: 25px;
+	}
 }
 
 .oriental--site-wrap {
@@ -1882,4 +1924,46 @@ footer .form-subscribe .form-control:active, footer .form-subscribe .form-contro
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+}
+
+.modal-form label:not(.form-inline label) {
+	font-weight: 700;
+}
+
+.modal-form input[type='radio'] {
+	width: 15px;
+}
+
+.modal-form .payment-form {
+	display: flex;
+}
+
+.modal-form .form-inline {
+	margin-right: 25px;
+	display: flex;
+}
+
+.modal-form .form-inline label {
+	margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+	.modal-form .payment-form {
+		display: block;
+	}
+	.modal-form .form-inline label {
+		margin-bottom: 0;
+	}
+}
+
+.modal-form .form-inline img {
+	width: 100%;
+	max-width: 250px;
+}
+
+.notify-under-btn {
+    margin-top: 5px;
+	display: block;
+    font-size: 14px;
+    color: grey;
 }

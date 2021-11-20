@@ -1,0 +1,33 @@
+//- Modal
+
+#modal-form(style="display:none")
+    form.modal-form(action='#')
+        .form-group
+            label(for='name') Ваше ФИО *
+            input#name.form-control(type='text' required)
+        .form-group
+            label(for='email') Ваш электронный адрес *
+            input#email.form-control(type='text' required)
+        .form-group
+            label(for='phone') Ваш телефон *
+            input#phone.form-control(type='text' required)
+        .form-group
+            label(for='subject') Выберите тур
+            select#tour.form-control(type='text')
+                option(value="Ничего не выбрано") ...
+                option(value="Самарканд") Самарканд
+                option(value="Бухара") Бухара
+                option(value="Хива") Хива
+                option(value="Шахрисабз") Шахрисабз
+        label Форма оплаты
+        .form-group.payment-form
+            span.form-inline
+                label(for='payment1') Наличные
+                input#payment1.form-control(type='radio' name="payment" value="Наличные")
+            span.form-inline
+                label(for='payment2') Пластиковая карта
+                input#payment2.form-control(type='radio' name="payment" value="Пластиковая карта")
+                img(src="assets/images/cards.png", alt="cards")
+        .form-group
+            input.btn.btn-black.px-5.text-white(type='submit' value='Отправить')
+            span.notify-under-btn * Нажимая на кнопку, вы даете согласие на обработку своих персональных данных.

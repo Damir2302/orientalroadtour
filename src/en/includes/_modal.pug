@@ -1,0 +1,33 @@
+//- Modal
+
+#modal-form(style="display:none")
+    form.modal-form(action='#')
+        .form-group
+            label(for='name') Full name *
+            input#name.form-control(type='text' required)
+        .form-group
+            label(for='email') E-mail *
+            input#email.form-control(type='text' required)
+        .form-group
+            label(for='phone') Phone number *
+            input#phone.form-control(type='text' required)
+        .form-group
+            label(for='subject') Select a tour
+            select#tour.form-control(type='text')
+                option(value="Nothing selected") ...
+                option(value="Samarkand") Samarkand
+                option(value="Bukhara") Bukhara
+                option(value="Khiva") Khiva
+                option(value="Shakhrisabz") Shakhrisabz
+        label Payment type
+        .form-group.payment-form
+            span.form-inline
+                label(for='payment1') Cash
+                input#payment1.form-control(type='radio' name="payment" value="Cash")
+            span.form-inline
+                label(for='payment2') Card
+                input#payment2.form-control(type='radio' name="payment" value="Card")
+                img(src="../assets/images/cards.png", alt="cards")
+        .form-group
+            input.btn.btn-black.px-5.text-white(type='submit' value='Send')
+            span.notify-under-btn * By clicking on the button, you consent to the processing of your personal data.

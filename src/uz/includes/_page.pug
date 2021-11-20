@@ -6,15 +6,15 @@ html(lang="uz")
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
 
     meta(name='author' content='OrientalRoadTour')
-    meta(name='description' content='Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!')
+    meta(name='description' content='«OrientalRoadTour» turoperatorining Oʻzbekistondagi diqqatga sazovor joylariga sayohatlar orasida eng yorqin, eng qiziqarli va oʻziga xos diqqatga sazovor joylarga tashrif buyurish kiradi!')
     meta(name='keywords' content='OrientalRoadTour, Uzbekistan, Samarkand, Bukhara, Tours')
 
     // OpenGraph
     <meta property="og:locale" content="uz_UZ" />
     <meta property="og:site_name" content="OrientalRoadTour.uz" />
-    <meta property="og:title" content="Экскурсионные туры по Узбекистану" />
+    <meta property="og:title" content="O'zbekiston turoperatori" />
     <meta property="og:type" content="website" />
-    <meta property="og:description" content="Экскурсионные туры по Узбекистану от туроператора «OrientalRoadTour» в включают в себя посещение самых ярких, интересных и самобытных достопримечательностей!" />
+    <meta property="og:description" content="«OrientalRoadTour» turoperatorining Oʻzbekistondagi diqqatga sazovor joylariga sayohatlar orasida eng yorqin, eng qiziqarli va oʻziga xos diqqatga sazovor joylarga tashrif buyurish kiradi!" />
     <meta property="og:image" content="../assets/images/slider_1.jpg" />
     <meta property="og:url" content="https://www.orientalroadtour.uz" />
 
@@ -33,9 +33,9 @@ html(lang="uz")
                 "@type": "Organization",
                 "address": {
                     "@type": "PostalAddress",
-                    "addressLocality": "Узбекистан, г. Самарканд",
+                    "addressLocality": "Oʻzbekiston, Samarqand",
                     "postalCode": "140100",
-                    "streetAddress": "Регистанская ул., 9Б"
+                    "streetAddress": "Abdurahmon Jomiy, Amir Shohmurod koʻchasi, 16"
                 },
                 "email": "orientalroadtour@gmail.com",
                 "name": "OrientalRoadTour",
@@ -48,12 +48,12 @@ html(lang="uz")
 
     .loader
       .spinner-border.text-primary(role='status')
-        span.sr-only Загрузка...
+        span.sr-only Yuklash...
 
     nav.oriental--site-mobile-menu
       .close-wrap.d-flex
         a.d-flex.ml-auto.js-menu-toggle(href='#')
-          span.close-label Закрыть
+          span.close-label Yashirish
           .close-times
             span.bar1
             span.bar2
@@ -69,6 +69,11 @@ html(lang="uz")
       // Main::Start
       block main
       // Main::End
+
+      // Modal::Start
+      block modal
+        include _modal
+      // Modal::End
 
       // Footer::Start
       footer.oriental--site-footer

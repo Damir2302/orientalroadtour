@@ -26,7 +26,7 @@
           "@type": "PostalAddress",
           "addressLocality": "Узбекистан, г. Самарканд",
           "postalCode": "140100",
-          "streetAddress": "Регистанская ул., 9Б"
+          "streetAddress": "Абдурахман Жамий, ул. Амир Шахмурод, 16"
       },
       "email": "orientalroadtour@gmail.com",
       "name": "OrientalRoadTour",
@@ -60,7 +60,7 @@
             </ul>
           </div>
           <div class="icons-wrap text-md-right">
-            <ul class="icons-top d-none d-lg-block">
+            <ul class="icons-top d-none d-lg-block js-clone-nav">
               <li><a><img src="assets/images/ru.svg" alt=""></a></li>
               <li><a href="/uz" title="O`zbekcha"><img src="assets/images/uz.svg" alt=""></a></li>
               <li><a href="/en" title="English"><img src="assets/images/gb.svg" alt=""></a></li>
@@ -82,6 +82,7 @@
                     <div class="sub-text">
                       <p>ЭКСКУРСИОННЫЕ ТУРЫ В УЗБЕКИСТАНЕ</p>
                     </div>
+                    <button class="btn btn--action">Бронировать тур</button>
                   </div>
                 </div>
               </div>
@@ -223,6 +224,43 @@
         </div>
       </div>
       <!-- Main::End-->
+      <!-- Modal::Start-->
+      <div id="modal-form" style="display:none">
+        <form class="modal-form" action="#">
+          <div class="form-group">
+            <label for="name">Ваше ФИО *</label>
+            <input class="form-control" id="name" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Ваш электронный адрес *</label>
+            <input class="form-control" id="email" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Ваш телефон *</label>
+            <input class="form-control" id="phone" type="text" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Выберите тур</label>
+            <select class="form-control" id="tour" type="text">
+              <option value="Ничего не выбрано">...</option>
+              <option value="Самарканд">Самарканд</option>
+              <option value="Бухара">Бухара</option>
+              <option value="Хива">Хива</option>
+              <option value="Шахрисабз">Шахрисабз</option>
+            </select>
+          </div>
+          <label>Форма оплаты</label>
+          <div class="form-group payment-form"><span class="form-inline">
+              <label for="payment1">Наличные</label>
+              <input class="form-control" id="payment1" type="radio" name="payment" value="Наличные"></span><span class="form-inline">
+              <label for="payment2">Пластиковая карта</label>
+              <input class="form-control" id="payment2" type="radio" name="payment" value="Пластиковая карта"><img src="assets/images/cards.png" alt="cards"></span></div>
+          <div class="form-group">
+            <input class="btn btn-black px-5 text-white" type="submit" value="Отправить"><span class="notify-under-btn">* Нажимая на кнопку, вы даете согласие на обработку своих персональных данных.</span>
+          </div>
+        </form>
+      </div>
+      <!-- Modal::End-->
       <!-- Footer::Start-->
       <footer class="oriental--site-footer">
         <div class="container">
@@ -247,7 +285,7 @@
                   <div class="row mb-3">
                     <div class="col-md-6">
                       <h3>Адрес</h3>
-                      <address> Узбекистан, г. Самарканд, 140100<br> ул. Регистанская, 9Б</address>
+                      <address> Узбекистан, г. Самарканд, 140100<br> Абдурахман Жамий, ул. Амир Шахмурод, 16</address>
                     </div>
                     <div class="col-md-6">
                       <h3>Контакты</h3>
